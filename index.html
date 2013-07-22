@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>G-Code Analyzer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -42,6 +42,7 @@
       /* Main body and headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+background-color: #f3f2f2;
       }
       .heading, .subheading{
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -123,18 +124,18 @@
     <div class="container">
       <div class="row-fluid heading">
 	<div class="span12">
-	  <h1>Product</h1>
+	  <h1><img src="http://anojan.com/files/images/logo-small.png"></h1>
 	</div>
       </div>
       <div class="row-fluid subheading">
 	<div class="span12">
 	  <!-- Special typography from Bottostrap for lead paragraph. -->
-	  <p class="lead">One sentence description.</p>
+	  <p class="lead">Edit, Verify, and Run your CNC programs.</p>
 	</div>
       </div>
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	  <img class="img-polaroid" src="http://anojan.com/files/images/screen1.jpg">
 	</div>
 	
 	<!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
@@ -149,7 +150,7 @@
 	      </div>
 	      <div class="span4">
 		<div class="linediv-c">
-		  <h3>$6000</h3> <p> of $10,000</p>
+		  <h3>$6000</h3> <p> of $12,000</p>
 		</div>
 	      </div>
 	      <div class="span4">
@@ -162,8 +163,8 @@
 	  <div class="span10 offset1">
 	    <!-- Bootstrap progress bar -->
 	    <div class="thermometer progress active">
-	      <div class="bar bar-success" style="width: 60%;"></div>
-	      <div class="bar bar-warning" style="width: 40%;"></div>
+	      <div class="bar bar-success" style="width: 50%;"></div>
+	      <div class="bar bar-warning" style="width: 50%;"></div>
 	    </div>
 	  </div>
 	  <div class="span6 offset3 order">
@@ -181,23 +182,45 @@
     <!-- Marketing section -->
     <div class="row-fluid section1">
       <div class="span5 offset1 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="img-polaroid" src="http://anojan.com/files/images/screen2.jpg">
       </div>
       <div class="span5 copy">
 	<p>
-	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam lacus, euismod quis semper a, commodo ac massa. Morbi in sem orci. Praesent faucibus, turpis vel tempor blandit, ante ipsum adipiscing ligula, ac aliquam tellus massa id mi. Aenean nec dolor nisl. Nullam leo tortor, tincidunt sit amet viverra a, dictum sit amet mauris. Cras et ligula nec augue eleifend ultrices. Suspendisse porttitor neque in fringilla iaculis. Quisque tempor, tellus nec fringilla venenatis, ante odio sodales sem, non ultrices risus urna porta urna. Sed blandit feugiat scelerisque.
+	  <a href="http://en.wikipedia.org/wiki/G-code">G-Code</a> Anayalzer is designed to help CNC programmers and operators get an insightful understanding of their program. It can also run a CNC machine via serial. 
+	  <h5>Verify</h5>
+	  <ul>
+	    <li>View program flow</li>
+	    <li>Mouse over elements to see partial toolpath</li>
+	    <li>Jump to code location from toolpath</li>
+	    <li>View modal states</li>
+	    <li>Measure distances</li>
+	    <li>Generate setup sheets (MS Word, OpenOffice)</li>
+	    <li>Datum display</li>
+	    <li>Support anaglyph 3D</li>
+	  </ul>
 	</p>
       </div>
     </div>
-
     <div class="row-fluid section2">
       <div class="span5 offset1 copy copy-right">
 	<p>
-	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam lacus, euismod quis semper a, commodo ac massa. Morbi in sem orci. Praesent faucibus, turpis vel tempor blandit, ante ipsum adipiscing ligula, ac aliquam tellus massa id mi. Aenean nec dolor nisl. Nullam leo tortor, tincidunt sit amet viverra a, dictum sit amet mauris. Cras et ligula nec augue eleifend ultrices. Suspendisse porttitor neque in fringilla iaculis. Quisque tempor, tellus nec fringilla venenatis, ante odio sodales sem, non ultrices risus urna porta urna. Sed blandit feugiat scelerisque.
+	  <h5>DNC</h5>
+	  <ul>
+	    <li>Drip feed/send programs via RS232 or Bluetooth</li>
+	    <li>Realtime toolpath animation</li>
+	    <li>Resume from any position in the program (modals are reconstructed and loaded)</li>
+	    <li>Supports subprograms (M98) and block skip (/)</li>
+	  </ul>
+	  <h5>Edit</h5>
+	  <ul>
+	    <li>Adjust feedrate by contouring, plunging and ramping (on-the-fly adjustment while drip feeding).</li>
+	    <li>Shift Z coordinates</li>
+	  </ul>
+	  Full editor, and more hardware support is planned. 
 	</p>
       </div>
       <div class="span5 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
+	<img class="img-polaroid" src="http://anojan.com/files/images/screen3.jpg">
       </div>
     </div>
 
@@ -209,27 +232,44 @@
 	  <div class="accordion-group">
 	    <div class="accordion-heading">
 	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		What does FAQ stand for?
+		What's supported?
 	      </a>
 	    </div>
 	    <div id="collapseOne" class="accordion-body collapse">
 	      <div class="accordion-inner">
-		Frequently Asked Question.
+		<h5>Software</h5>
+		<ul>
+		  <li>Windows XP (and higher)</li>
+		  <li>OSX 10.7+</li>
+		  <li>Linux</li>
+		</ul>
+		<h5>Hardware</h5>
+		<ul>
+		  <li>RS-232</li>
+		  <li>Bluetooth SPP</li>
+		</ul>
+		<h5>Controls</h5>
+		<ul>
+		  <li>Fanuc</li>
+		  <li>Yasnak</li>
+		  <li>More coming soon... Vote for your favorite hardware</li>
+		</ul>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="accordion-group">
 	    <div class="accordion-heading">
 	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		What's a Frequently Asked Question?
+		When will it ship?
 	      </a>
 	    </div>
 	    <div id="collapseTwo" class="accordion-body collapse">
 	      <div class="accordion-inner">
-		A question which is commonly asked by users.
+		Once funded, estimate is 3 months for initial release.
 	      </div>
 	    </div>
 	  </div>
+
 	</div>
       </div>
     </div>
